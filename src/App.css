@@ -13,3 +13,12 @@
     flex-direction: column;
 }
 
+.imageList{
+    columns: 250px;
+    column-gap:10px;
+}
+
+.imageListImg{
+    width: 100%; /*taşma olmadan kapsayıcı divin genisliği kadar olmasını istedigimiz için */
+}
+

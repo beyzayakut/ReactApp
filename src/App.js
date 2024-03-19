@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 import SearchHeader from './SearchHeader';
-import searchImages from './api'; {/*Bu fonksiyon, belirli bir terimle ilgili resim aramak için kullanılacak olan API çağrısını gerçekleştirir.*/}
+import searchImages from './api';
+import ImageList from './components/ImageList';
+ {/*Bu fonksiyon, belirli bir terimle ilgili resim aramak için kullanılacak olan API çağrısını gerçekleştirir.*/}
 
 function App() {
   const [images,setImages] =useState([])
@@ -15,6 +17,7 @@ Bu durumda, fonksiyon sadece terimi konsola yazdırır ve searchImages fonksiyon
   return (
     <div className="App">
       <SearchHeader search={handleSubmit}/> {/*searchHeader: arama işlemlerini gerceklestirmemizi saglar*/}
+      <ImageList imagesPlaceholder={images}/>
     </div>
   );
 }
