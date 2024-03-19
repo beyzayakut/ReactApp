@@ -3,9 +3,11 @@
 }
 
 .searchDiv{
-    border: 1px solid lightgray;
+    border: 30px solid lightslategray;
     padding: 10px;
     border-radius: 5px;
+    font-weight: bold;
+
 }
 
 .searchDiv form{

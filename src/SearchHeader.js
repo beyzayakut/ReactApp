@@ -13,7 +13,7 @@ function SearchHeader({search}) {
     return (
         <div className="searchDiv">
             <form onSubmit={handleFormSubmit}> {/*onSubmit: Form submit olduğu anda ne yapacağını söyleyeceğimiz event'tir*/}
-                <label>Ne arıyorsunuz?</label>
+                <label>Ne arıyorsunuz?</label> <br></br>
                 <input value={valueInput} onChange={handleChange}/>
             </form> 
         </div>
